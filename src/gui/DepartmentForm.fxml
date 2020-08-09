@@ -24,6 +24,9 @@
           <font>
             <Font name="System Bold Italic" size="14.0" fx:id="x2" />
           </font>
+          <GridPane.margin>
+            <Insets left="10.0" />
+          </GridPane.margin>
         </Label>
         <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
           <children>
