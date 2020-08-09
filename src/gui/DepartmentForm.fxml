@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="134.0" prefWidth="440.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2">
+<AnchorPane prefHeight="134.0" prefWidth="440.0" style="" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gui.DepartmentFormController">
   <!-- TODO Add Nodes -->
   <children>
     <GridPane prefHeight="106.0" prefWidth="454.0000999999975" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
@@ -18,18 +18,17 @@
           </font>
         </Label>
         <Label font="$x1" text="Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-        <TextField editable="false" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
-        <TextField prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-        <Label text="" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
+        <TextField id="btCancel" fx:id="txtId" editable="false" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <TextField id="btCancel" fx:id="txtName" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label id="btCancel" fx:id="lbErrorName" text="" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="1">
           <font>
             <Font name="System Bold Italic" size="14.0" fx:id="x2" />
           </font>
         </Label>
-        <Label font="$x2" text="" textFill="RED" GridPane.columnIndex="2" GridPane.rowIndex="0" />
         <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
           <children>
-            <Button mnemonicParsing="false" text="Save" />
-            <Button mnemonicParsing="false" text="Cancel" />
+            <Button id="btCancel" fx:id="btSave" mnemonicParsing="false" onAction="#onBtSaveAction" text="Save" />
+            <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancel" />
           </children>
           <padding>
             <Insets left="5.0" top="5.0" />
