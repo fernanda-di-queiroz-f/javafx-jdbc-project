@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.*?>
 
-<VBox prefHeight="333.0" prefWidth="411.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gui.SellerListController">
+<VBox prefHeight="451.0" prefWidth="624.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="gui.SellerListController">
   <!-- TODO Add Nodes -->
   <children>
     <Label text="Seller Registration">
@@ -26,9 +26,12 @@
     <TableView id="btNew" fx:id="tableViewSeller" prefHeight="276.0" prefWidth="411.0">
       <columns>
         <TableColumn prefWidth="75.0" text="Id" fx:id="tableColumnId" />
-        <TableColumn minWidth="30.0" prefWidth="140.0" text="Name" fx:id="tableColumnName" />
-        <TableColumn prefWidth="60.0" text="" fx:id="tableColumnEdit" />
-        <TableColumn prefWidth="115.0" text="" fx:id="tableColumnRemove" />
+        <TableColumn minWidth="30.0" prefWidth="110.0" text="Name" fx:id="tableColumnName" />
+        <TableColumn prefWidth="130.0" text="Email" fx:id="tableColumnEmail" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="92.0" text="Birth Date" fx:id="tableColumnBirthDate" />
+        <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="94.0" text="Base Salary" fx:id="tableColumnBaseSalary" />
+        <TableColumn prefWidth="55.0" text="" fx:id="tableColumnEdit" />
+        <TableColumn prefWidth="80.0" text="" fx:id="tableColumnRemove" />
       </columns>
     </TableView>
   </children>
