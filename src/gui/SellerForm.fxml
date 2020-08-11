@@ -7,10 +7,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="302.0" prefWidth="530.0" style="" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SellerFormController">
+<AnchorPane prefHeight="283.0" prefWidth="530.0" style="" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.SellerFormController">
   <!-- TODO Add Nodes -->
   <children>
-    <GridPane prefHeight="267.0" prefWidth="506.0" AnchorPane.bottomAnchor="15.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+    <GridPane prefHeight="257.0" prefWidth="506.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
       <children>
         <Label text="Id" GridPane.columnIndex="0" GridPane.rowIndex="0">
           <font>
@@ -34,7 +34,7 @@
             <Button fx:id="btCancel" mnemonicParsing="false" onAction="#onBtCancelAction" text="Cancel" />
           </children>
           <padding>
-            <Insets left="5.0" top="5.0" />
+            <Insets left="5.0" top="20.0" />
           </padding>
         </HBox>
         <Label text="Email" GridPane.columnIndex="0" GridPane.rowIndex="2">
@@ -80,6 +80,7 @@
                   <Insets left="10.0" />
                </GridPane.margin>
             </Label>
+            <ComboBox fx:id="cbDepartment" prefHeight="25.0" prefWidth="190.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
       </children>
       <columnConstraints>
         <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="102.0" />
